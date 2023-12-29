@@ -1,10 +1,10 @@
 from pathlib import Path
 
+import typer
+
 from configuration_file_reader import ConfigurationFileReader
 from structure_builder import StructureBuilder
 from structure_parser import StructureParser
-
-import typer
 
 app = typer.Typer()
 

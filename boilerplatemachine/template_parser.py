@@ -1,12 +1,7 @@
-import re
-from pathlib import Path
-
 import typer
+from jinja2 import Environment, meta
 
 from argument_repository import ArgumentRepository
-from jinja2 import Environment, FileSystemLoader, meta
-
-from configuration_file_reader import ConfigurationFileReader
 
 
 class TemplateParser:

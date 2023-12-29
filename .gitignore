@@ -4,3 +4,7 @@
 tests/study/
 
 dist/
+
+main.spec
+
+build/
