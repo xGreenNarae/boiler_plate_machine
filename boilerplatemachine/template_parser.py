@@ -1,7 +1,7 @@
 import typer
 from jinja2 import Environment, meta
 
-from argument_repository import ArgumentRepository
+from boilerplatemachine.argument_repository import ArgumentRepository
 
 
 class TemplateParser:

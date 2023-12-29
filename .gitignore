@@ -3,8 +3,11 @@
 
 tests/study/
 
-dist/
-
-main.spec
+bpm.spec
 
 build/
+
+# pycache
+__pycache__/
+boilerplatemachine/__pycache__/
+

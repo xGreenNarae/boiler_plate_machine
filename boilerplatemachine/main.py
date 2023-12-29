@@ -2,9 +2,9 @@ from pathlib import Path
 
 import typer
 
-from configuration_file_reader import ConfigurationFileReader
-from structure_builder import StructureBuilder
-from structure_parser import StructureParser
+from boilerplatemachine.configuration_file_reader import ConfigurationFileReader
+from boilerplatemachine.structure_builder import StructureBuilder
+from boilerplatemachine.structure_parser import StructureParser
 
 app = typer.Typer()
 

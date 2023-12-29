@@ -1,6 +1,6 @@
 import yaml
 
-from template_parser import TemplateParser
+from boilerplatemachine.template_parser import TemplateParser
 
 
 class StructureParser:

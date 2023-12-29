@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from configuration_file_reader import ConfigurationFileReader
-from template_parser import TemplateParser
+from boilerplatemachine.configuration_file_reader import ConfigurationFileReader
+from boilerplatemachine.template_parser import TemplateParser
 
 
 class StructureBuilder:

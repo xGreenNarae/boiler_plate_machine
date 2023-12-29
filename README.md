@@ -53,5 +53,13 @@ public class {{ name }}Controller {
 
 2. generate boiler plate  
 
+use `dist/bpm` binary file for now.
+
+`bpm <structure_config_filename> <target_directory>`
+
+---
 
 
+### TODO
+- show list of config files
+- add, remove config files easily
