@@ -23,3 +23,23 @@ class ConfigurationFileReader:
             raise FileNotFoundError(f"File {template_file} does not exist.")
 
         return template_file.read_text()
+
+    @staticmethod
+    def get_structure_config_files():
+        structure_files = ConfigurationFileReader.structure_config_file_path.glob("*.yaml")
+        template_files = ConfigurationFileReader.template_file_path.glob("*")
+
+        return {
+            "structure_files": [file.name for file in structure_files],
+            "template_files": [file.name for file in template_files]
+        }
+
+    @staticmethod
+    def read_file_content(file_type: str, file_name: str):
+        match file_type:
+            case "structure":
+                return ConfigurationFileReader.read_structure_config_file(file_name)
+            case "template":
+                return ConfigurationFileReader.read_template_file(file_name)
+            case _:
+                raise ValueError(f"Invalid file type: {file_type}")
